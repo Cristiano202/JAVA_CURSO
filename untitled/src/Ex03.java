@@ -22,7 +22,7 @@ public class Ex03 {
             System.out.println("Não é um numero perfeito");
         }
 
-
+    scanner.close();
     }
 
 

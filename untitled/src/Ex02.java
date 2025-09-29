@@ -21,6 +21,7 @@ public class Ex02 {
             System.out.println("X2: "+(-valorB+Math.sqrt(delta))/(2*valorB));
 
         }
+        scanner.close();
 
     }
 }
