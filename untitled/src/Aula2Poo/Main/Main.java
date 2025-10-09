@@ -31,7 +31,7 @@ public class Main {
         }
         System.out.println("Deseja ver o status dos alunos ");
         String res=scanner.nextLine();
-        if (res =="Sim"|| res =="SIM"){
+        if (res.equals("sim")){
             System.out.println("\n Dados dos Alunos:");
             for (Aluno aluno : alunos) {
                 aluno.exibirDados();
