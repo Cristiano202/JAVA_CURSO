@@ -1,3 +1,5 @@
+package Aula2JavaBasico;
+
 import java.util.Scanner;
 
 public class Ex04 {

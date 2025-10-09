@@ -1,3 +1,5 @@
+package Aula2JavaBasico;
+
 public class Ex01 {
     static void main() {
         for(int i=7;i<=100;i++){
