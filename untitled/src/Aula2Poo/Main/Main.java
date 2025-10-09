@@ -29,12 +29,18 @@ public class Main {
 
             alunos[i] = new Aluno(nome, idade, nota);
         }
-
-        System.out.println("\n Dados dos Alunos:");
-        for (Aluno aluno : alunos) {
-            aluno.exibirDados();
-            System.out.println();
+        System.out.println("Deseja ver o status dos alunos ");
+        String res=scanner.nextLine();
+        if (res =="Sim"|| res =="SIM"){
+            System.out.println("\n Dados dos Alunos:");
+            for (Aluno aluno : alunos) {
+                aluno.exibirDados();
+                System.out.println();
+            }
         }
+        System.out.println("Fim do programa ");
+        System.out.println("---------------- ");
+
 
         scanner.close();
     }
