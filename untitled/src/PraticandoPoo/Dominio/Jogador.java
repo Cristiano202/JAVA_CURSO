@@ -1,11 +1,22 @@
 package PraticandoPoo.Dominio;
 
+import java.sql.SQLOutput;
+
 public class Jogador {
     private String nome;
     private  int idade;
     private  String time;
     private char sexo;
     private float salario;
+
+    public void imprimi(){
+        System.out.println("Apresentando o jogador "+this.getNome());
+        System.out.println("IDADE: "+this.getIdade());
+        System.out.println(" TIME: "+this.getTime());
+        System.out.println("SEXO: "+this.getTime());
+        System.out.println("SEU salario: "+this.getSalario());
+
+    }
 
     public Jogador(){
 
