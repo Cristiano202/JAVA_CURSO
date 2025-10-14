@@ -7,26 +7,34 @@ import java.util.Scanner;
 public class Pratica01 {
     static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
-        Jogador jogador1=new Jogador();
-        System.out.print("Informe seu nome : ");
-        jogador1.setNome(sc.nextLine());
+        Jogador[] jogadores=new Jogador[2];
+        for (int i = 0; i < jogadores.length; i++) {
+            jogadores[i] = new Jogador();
 
-        System.out.print("Informe sua idade: ");
-        jogador1.setIdade(sc.nextInt());
-        sc.nextLine();
+            System.out.print("Informe seu nome: ");
+            jogadores[i].setNome(sc.nextLine());
 
-        System.out.print("Informe seu time: ");
-        jogador1.setTime(sc.nextLine());
+            System.out.print("Informe sua idade: ");
+            jogadores[i].setIdade(sc.nextInt());
+            sc.nextLine();
 
-        System.out.print("Informe seu sexo: ");
-        jogador1.setSexo(sc.nextLine());
+            System.out.print("Informe seu time: ");
+            jogadores[i].setTime(sc.nextLine());
 
-        System.out.print("Informe seu salario: ");
-        jogador1.setSalario(sc.nextFloat());
+            System.out.print("Informe seu sexo: ");
+            jogadores[i].setSexo(sc.nextLine());
 
-        sc.nextLine();
+            System.out.print("Informe seu salario: ");
+            jogadores[i].setSalario(sc.nextFloat());
+            sc.nextLine();
+        }
+
+
         sc.close();
-        jogador1.imprimi();
+        for (Jogador j : jogadores) {
+            j.imprimi();
+        }
+
 
     }
 }

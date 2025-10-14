@@ -28,12 +28,7 @@ public class Jogador {
     }
 
     public void setIdade(int idade) {
-        if(this.getIdade()<18){
-            System.out.println("Você ainda é de menor ");
-        }
-        else {
-            System.out.println("Você ja é de maior ");
-        }
+        this.idade=idade;
     }
 
     public String getNome() {
