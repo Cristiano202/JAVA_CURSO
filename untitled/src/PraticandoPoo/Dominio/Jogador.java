@@ -6,14 +6,15 @@ public class Jogador {
     private String nome;
     private  int idade;
     private  String time;
-    private char sexo;
+    private String sexo;
     private float salario;
 
     public void imprimi(){
+        System.out.println("------------------");
         System.out.println("Apresentando o jogador "+this.getNome());
         System.out.println("IDADE: "+this.getIdade());
-        System.out.println(" TIME: "+this.getTime());
-        System.out.println("SEXO: "+this.getTime());
+        System.out.println("TIME: "+this.getTime());
+        System.out.println("SEXO: "+this.getSexo());
         System.out.println("SEU salario: "+this.getSalario());
 
     }
@@ -46,11 +47,11 @@ public class Jogador {
         this.salario = salario;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
