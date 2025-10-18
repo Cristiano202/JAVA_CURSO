@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class TestCinema {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        List<CadrastroCinema> listaFilmes = new ArrayList<>();
+        List<Filme> listaFilmes = new ArrayList<>();
 
         boolean resposta = true;
         do {
-            CadrastroCinema cc = new CadrastroCinema(); // novo filme a cada loop
+            Filme cc = new Filme(); // novo filme a cada loop
 
             System.out.print("Informe o nome do filme: ");
             cc.setNome(sc.nextLine());
@@ -32,7 +32,7 @@ public class TestCinema {
         } while (resposta);
 
         System.out.println("\nFilmes cadastrados:");
-        for (CadrastroCinema filme : listaFilmes) {
+        for (Filme filme : listaFilmes) {
             filme.imprimir();
             System.out.println("----------------------");
         }

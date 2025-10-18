@@ -1,17 +1,13 @@
-package Pratica10;
-
-public class CadrastroCinema {
+public class Filme {
     private String nome;
     private int sala;
     private int codigo;
 
-    public void imprimir(){
-        System.out.println("Nome: "+getNome());
-        System.out.println("Sala: "+getSala());
-        System.out.println("Codigo: "+getCodigo());
-    }
-
-    public CadrastroCinema() {
+    public void imprimir() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Sala: " + sala);
+        System.out.println("Código: " + codigo);
+        System.out.println("----------------------");
     }
 
     public String getNome() {
