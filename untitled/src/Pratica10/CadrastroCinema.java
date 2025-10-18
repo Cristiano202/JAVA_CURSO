@@ -5,6 +5,12 @@ public class CadrastroCinema {
     private int sala;
     private int codigo;
 
+    public void imprimir(){
+        System.out.println("Nome: "+getNome());
+        System.out.println("Sala: "+getSala());
+        System.out.println("Codigo: "+getCodigo());
+    }
+
     public CadrastroCinema() {
     }
 
