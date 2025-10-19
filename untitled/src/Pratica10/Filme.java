@@ -1,3 +1,5 @@
+package Pratica10;
+
 public class Filme {
     private String nome;
     private int sala;
@@ -23,6 +25,10 @@ public class Filme {
     }
 
     public void setSala(int sala) {
+        if(getSala()<0 || getSala() >10){
+            System.out.println("Codigo invalido!! ");
+            System.out.println("Só temnos salas de 1 a 10 !");
+        }
         this.sala = sala;
     }
 
