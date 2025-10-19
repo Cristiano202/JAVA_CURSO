@@ -24,15 +24,19 @@ public class Filme {
         return sala;
     }
 
-    public void setSala(int sala) {
+    public boolean setSala(int sala) {
         if(sala<1 || sala >10){
             System.out.println("Codigo invalido!! ");
             System.out.println("Só temnos salas de 1 a 10 !");
+            return false;
         }
         else {
+            this.sala=sala;
             System.out.println("Filme adicionado com sucesso !!");
+            return true;
         }
     }
+
 
     public int getCodigo() {
         return codigo;

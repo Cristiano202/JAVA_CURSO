@@ -15,10 +15,15 @@ public class TestCinema {
 
             System.out.print("Informe o nome do filme: ");
             cc.setNome(sc.nextLine());
+            boolean salaValidar;
+            do {
+                System.out.print("Informe a sala: ");
+                salaValidar=cc.setSala(sc.nextInt());
+                sc.nextLine();
 
-            System.out.print("Informe a sala: ");
-            cc.setSala(sc.nextInt());
-            sc.nextLine();
+            }while (!salaValidar);
+
+
 
             System.out.print("Informe o código do filme: ");
             cc.setCodigo(sc.nextInt());
