@@ -7,6 +7,11 @@ public class Moto extends Veiculo {
         super(placa, proprietario, dataEntrada, horaEntrada);
 
 
+
+
+    }
+    public void emprimir(){
+
     }
     @Override
     public float precoEstacionamento(){
