@@ -3,6 +3,8 @@ package estacionamneto;
 public class Carro extends Veiculo{
     private int passageiro;
 
+
+
     public int getPassageiro() {
         return passageiro;
     }

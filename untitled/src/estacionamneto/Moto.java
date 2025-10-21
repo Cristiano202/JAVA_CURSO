@@ -10,7 +10,8 @@ public class Moto extends Veiculo {
 
 
     }
-    public void emprimir(){
+    public void emprimirPreço(){
+        System.out.println("Preço: "+ precoEstacionamento());
 
     }
     @Override
