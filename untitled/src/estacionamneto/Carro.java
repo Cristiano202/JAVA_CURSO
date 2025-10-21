@@ -3,8 +3,15 @@ package estacionamneto;
 public class Carro extends Veiculo{
     private int passageiro;
 
+    public Carro(String placa, String proprietario, String dataEntrada, String horaEntrada, int passageiro) {
 
+        super(placa, proprietario, dataEntrada, horaEntrada);
+        this.passageiro = passageiro;
+    }
 
+    public void emprimirPrecoCarro(){
+        System.out.println("Preço: "+precoEstacionamento());
+    }
     public int getPassageiro() {
         return passageiro;
     }
@@ -13,11 +20,7 @@ public class Carro extends Veiculo{
         this.passageiro = passageiro;
     }
 
-    public Carro(String placa, String proprietario, String dataEntrada, String horaEntrada, int passageiro) {
 
-        super(placa, proprietario, dataEntrada, horaEntrada);
-        this.passageiro = passageiro;
-    }
 
 
     @Override

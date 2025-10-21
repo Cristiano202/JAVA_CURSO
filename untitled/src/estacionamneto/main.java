@@ -7,8 +7,9 @@ public class main {
         Moto moto =new Moto("1222","cris", "11","23");
         moto.emprimir();
         moto.emprimirPreço();
-        Carro carro=new Carro("1222","cris", "11","23",7);
+        Carro carro=new Carro("1222","cris", "11","23",5);
         System.out.println("-----------");
         carro.emprimir();
+        carro.emprimirPrecoCarro();
     }
 }
