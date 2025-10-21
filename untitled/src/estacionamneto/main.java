@@ -22,9 +22,9 @@ public class main {
         moto.emprimir();
         moto.emprimirPreço();
 
-        Carro carro=new Carro("1222","cris", "11","23",5);
+        Carro carro=new Carro();
         System.out.println("-----------");
-        System.out.print("Informe  o numero da placar da sua moto: ");
+        System.out.print("Informe  o numero da placar do carro: ");
         carro.setPlaca(sc.nextLine());
 
         System.out.print("Informe o proprietario: ");
