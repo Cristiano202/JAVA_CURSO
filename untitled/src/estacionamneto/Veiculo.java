@@ -8,11 +8,8 @@ public abstract class Veiculo {
     private String horaEntrada;
 
 
-    public Veiculo(String placa, String proprietario, String dataEntrada, String horaEntrada) {
-        this.placa = placa;
-        this.proprietario = proprietario;
-        this.dataEntrada = dataEntrada;
-        this.horaEntrada = horaEntrada;
+    public Veiculo() {
+
     }
     public  void emprimir(){
         System.out.println("Placa: "+getPlaca());
