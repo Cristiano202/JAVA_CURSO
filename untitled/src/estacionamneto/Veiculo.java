@@ -14,6 +14,12 @@ public abstract class Veiculo {
         this.dataEntrada = dataEntrada;
         this.horaEntrada = horaEntrada;
     }
+    public void emprimir(){
+        System.out.println("Placa: "+getPlaca());
+        System.out.println("Proprietario: "+getProprietario());
+        System.out.println("data entrada: "+getDataEntrada());
+        System.out.println(" sairda hora: "+getHoraEntrada());
+    }
     public abstract float precoEstacionamento();
 
 
