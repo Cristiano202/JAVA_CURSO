@@ -11,6 +11,15 @@ public class Aviao implements Voavel{
 
     }
 
+    @Override
+    public String toString() {
+        return "Aviao{" +
+                "fabricante='" + fabricante + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", ano=" + ano +
+                '}';
+    }
+
     public String getFabricante() {
         return fabricante;
     }

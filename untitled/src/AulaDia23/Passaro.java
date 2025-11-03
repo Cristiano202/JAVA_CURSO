@@ -12,6 +12,13 @@ public class Passaro implements Voavel{
     }
 
     @Override
+    public String toString() {
+        return "Passaro{" +
+                "especie='" + especie + '\'' +
+                '}';
+    }
+
+    @Override
     public void voar() {
         System.out.println("Voando com as asas ");
 

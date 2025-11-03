@@ -16,9 +16,11 @@ public class Aula001 {
         sc.nextLine();
 
         aviao.voar();
+        System.out.println(aviao.toString());
         System.out.println("Qual especie do passaro: ");
         passaro.setEspecie(sc.nextLine());
         passaro.voar();
+        System.out.println(passaro.toString());
 
     }
 }
