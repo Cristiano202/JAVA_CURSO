@@ -1,6 +1,6 @@
 package AulaDia05.Dominio;
 
-public class ContaCorrente extends Conta{
+public class ContaCorrente extends Conta implements Tributavel{
     private double taxaManutencao;
 
     public ContaCorrente(String titular, double saldo) {
@@ -22,5 +22,10 @@ public class ContaCorrente extends Conta{
 
     public void setTaxaManutencao(double taxaManutencao) {
         this.taxaManutencao = taxaManutencao;
+    }
+
+    @Override
+    public Boolean descontarTaxa() {
+        return null;
     }
 }
