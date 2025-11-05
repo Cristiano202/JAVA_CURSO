@@ -7,6 +7,11 @@ public class Poupanca extends Conta implements RenTavel {
         super(titular, saldo);
     }
 
+    public Boolean setTaxaJuro(double taxaJuro){
+        setSaldo(getSaldo()+(getSaldo()*taxaJuro)/100);
+        return true;
+
+    }
 
 
     @Override
